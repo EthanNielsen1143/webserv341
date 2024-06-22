@@ -1,0 +1,37 @@
+
+# Base URL
+GET http://localhost:8080
+
+### ALL USERS
+GET http://localhost:8080/users
+
+### SPECIFIC USER (first example)
+GET http://localhost:8080/users/666dfde9316b00afe7b4d98a
+
+### Create a new user
+POST http://localhost:8080/users HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Second John",
+    "lastName": "Doe",
+    "email": "johndoe@gmail.com",
+    "favoriteColor": "blue",
+    "birthday": "1990-01-01"
+}
+
+### Update a user
+PUT http://localhost:8080/users/666dfe14316b00afe7b509e8 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "test@gmail.com",
+    "favoriteColor": "red",
+    "birthday": "1990-01-01"
+}
+
+### Delete a user
+DELETE http://localhost:8080/users/6677419b50d424b19e99b575 HTTP/1.1
+content-type: application/json
