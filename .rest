@@ -1,0 +1,9 @@
+--PROD--
+Base URL
+GET https://project1-6gw9.onrender.com
+
+ALL USERS
+GET https://project1-6gw9.onrender.com/users
+
+SPECIFIC USER (first example)
+GET https://project1-6gw9.onrender.com/users/666dfde9316b00afe7b4d98a
